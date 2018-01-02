@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach(var d in ViewBag.ListOfDucks)
+{
+    @d.quack(); <br />
+    @Html.Raw(d.fly()); <br /><br />
+}
